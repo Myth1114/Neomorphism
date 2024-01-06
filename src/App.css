@@ -1,38 +1,154 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  /* user-select: none; */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100vh;
+}
+body {
+  background: #dde1e7;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container {
+  /* display: grid;
+  place-items: center; */
+  width: 30rem;
+  padding: 3rem 1rem;
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container .ContainerFirstLevel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.Container .ContainerFirstLevel .Box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.Container .ContainerFirstLevel .Box .Clock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  height: 3rem;
+  width: 6rem;
+  font-size: 1.7rem;
+  box-shadow:  5px 5px 10px #f5f5f5,
+               -5px -5px 10px #bdbdbd;
+}
+.Container .ContainerFirstLevel .Box .Smiley{
+display: flex;
+}
+.Container .ContainerFirstLevel .Box2 .Square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 8rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.Container .ContainerFirstLevel .Box2 .Square .Time {
+  display: flex;
+  margin:.4rem;
+}
+.Container .ContainerFirstLevel .Box2 .Square .Time .GreenSquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Container .ContainerFirstLevel .Box2 .Square .Time .GreenSquare span {
+  background-color: #8fbc8b;
+  border-radius: .4rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  font-size: 0.7rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container .ContainerSecondLevel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+}
+.Container .ContainerSecondLevel .Box {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Container .ContainerSecondLevel .Box1 {
+  display: flex;
+}
+.Container .ContainerSecondLevel .Box1 .SmallSquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+  margin: 1rem 0.5rem 1rem 0;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.Container .ContainerSecondLevel .Box1 .SmallSquare .Icons {
+font-size: 2rem;
+}
+.Container .ContainerSecondLevel .Box1 .SmallSquare .Icons .Chrome{
+  color: #8fbc8b;
+}
+.Container .ContainerSecondLevel .Box .Rectangle {
+  height: 5rem;
+  width: 10rem;
+  border-radius: 4rem;
+  background-color: #8fbc8b;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.Container .ContainerSecondLevel .Circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.Container .ContainerSecondLevel .Circle::after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
 }
