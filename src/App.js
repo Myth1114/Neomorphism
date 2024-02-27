@@ -67,9 +67,42 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className="Rectangle"></div>
+            <div className="Rectangle">
+              <span>Hello</span>
+            </div>
           </div>
-          <div className="Circle"></div>
+          <div className="Circle">
+            <img src="/Images/clock.png" alt="clock" />
+          </div>
+        </div>
+        <div className="ContainerThirdLevel">
+          <div className="ThirdSquare">
+            <span className="plus">+</span>
+            <span className="cup">0</span>
+            <span className="minus">-</span>
+          </div>
+          <div className="ThirdRectangle">
+            <div className="common">
+              <span>
+                <small>Calendar</small>
+              </span>
+              <img src="/Images/calender.png" alt="calender" />
+            </div>
+            <div className="common">
+              <span>
+                <small>Notes</small>
+              </span>
+              <img src="/Images/notes.png" alt="notes" />
+            </div>
+          </div>
+          <div className="ThirdSocial">
+            <div className="facebook">
+              <img src="/Images/facebook.png" alt="facebook" />
+            </div>
+            <div className="insta">
+              <img src="/Images/insta.png" alt="insta" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
