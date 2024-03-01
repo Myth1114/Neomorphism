@@ -21,8 +21,8 @@ function App() {
     <div className="App">
       <div className="Container">
         <h1>Neomorphism</h1>
-        <div class="ContainerFirstLevel">
-          <div class="Box">
+        <div className="ContainerFirstLevel">
+          <div className="Box">
             <div className="Clock">{hour}</div>
             <div className="Date">
               <span>{date.toLocaleDateString()}</span>
