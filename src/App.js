@@ -1,34 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import { FaXTwitter } from "react-icons/fa6";
 import { FaChrome } from "react-icons/fa";
-import { RiMickeyLine } from "react-icons/ri";
 function App() {
   const hour = new Date().getHours();
   const minute = new Date().getMinutes();
   const second = new Date().getSeconds();
+
+  const date = new Date();
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => setTime(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+  console.log(time.toLocaleTimeString());
+
   return (
     <div className="App">
       <div className="Container">
         <h1>Neomorphism</h1>
-
         <div class="ContainerFirstLevel">
           <div class="Box">
-            <div className="Clock">
-              {hour}:{minute}
-            </div>
+            <div className="Clock">{hour}</div>
             <div className="Date">
-              <span>22/12/1203</span>
+              <span>{date.toLocaleDateString()}</span>
             </div>
             <div className="Smiley">
               <div>
-                <span>
-                  <RiMickeyLine />
-                </span>
+                <img src="/Images/smile.png" alt="smile" />
               </div>
               <div>
-                <span>100%</span>
+                <span>
+                  <small>100%</small>
+                </span>
               </div>
             </div>
           </div>
@@ -50,7 +56,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="Square"></div>
+            <div className="SquareTwo">
+              <img src="/Images/wifi.png" alt="wifi" />
+            </div>
           </div>
         </div>
         <div className="ContainerSecondLevel">
@@ -68,7 +76,7 @@ function App() {
               </div>
             </div>
             <div className="Rectangle">
-              <span>Hello</span>
+              <img src="/Images/flight.png" alt="flight" />
             </div>
           </div>
           <div className="Circle">
@@ -77,9 +85,19 @@ function App() {
         </div>
         <div className="ContainerThirdLevel">
           <div className="ThirdSquare">
-            <span className="plus">+</span>
-            <span className="cup">0</span>
-            <span className="minus">-</span>
+            <div className="Box3">
+              <span className="plus">+</span>
+              <span className="cup">
+                <img src="/Images/glass.png" alt="cup" />
+              </span>
+              <span className="minus">-</span>
+            </div>
+            <span>
+              <small>0/8</small>
+            </span>
+            <span>
+              <small>Time To drink Water</small>
+            </span>
           </div>
           <div className="ThirdRectangle">
             <div className="common">
@@ -102,6 +120,14 @@ function App() {
             <div className="insta">
               <img src="/Images/insta.png" alt="insta" />
             </div>
+          </div>
+        </div>
+        <div className="Footer">
+          <div className="CallIcon">
+            <img src="/Images/phone.png" alt="call" />
+          </div>
+          <div className="cameraIcon">
+            <img src="/Images/camera.png" alt="camera" />
           </div>
         </div>
       </div>
