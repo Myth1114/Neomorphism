@@ -29,6 +29,7 @@ body {
 }
 h1{
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip:text;
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 2rem;
