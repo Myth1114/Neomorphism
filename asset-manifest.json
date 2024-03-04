@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Neomorphism/static/css/main.252e538b.chunk.css",
+    "main.js": "/Neomorphism/static/js/main.8b113eb7.chunk.js",
+    "main.js.map": "/Neomorphism/static/js/main.8b113eb7.chunk.js.map",
+    "runtime~main.js": "/Neomorphism/static/js/runtime~main.d8a00d39.js",
+    "runtime~main.js.map": "/Neomorphism/static/js/runtime~main.d8a00d39.js.map",
+    "static/js/2.d92ec8a3.chunk.js": "/Neomorphism/static/js/2.d92ec8a3.chunk.js",
+    "static/js/2.d92ec8a3.chunk.js.map": "/Neomorphism/static/js/2.d92ec8a3.chunk.js.map",
+    "static/js/3.68d536b4.chunk.js": "/Neomorphism/static/js/3.68d536b4.chunk.js",
+    "static/js/3.68d536b4.chunk.js.map": "/Neomorphism/static/js/3.68d536b4.chunk.js.map",
+    "index.html": "/Neomorphism/index.html",
+    "precache-manifest.f91b549ccd03dfa8007afda96191d3ee.js": "/Neomorphism/precache-manifest.f91b549ccd03dfa8007afda96191d3ee.js",
+    "service-worker.js": "/Neomorphism/service-worker.js",
+    "static/css/main.252e538b.chunk.css.map": "/Neomorphism/static/css/main.252e538b.chunk.css.map"
+  }
+}
