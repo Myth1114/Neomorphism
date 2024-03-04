@@ -29,7 +29,7 @@ function App() {
             </div>
             <div className="Smiley">
               <div>
-                <img src="/Images/smile.png" alt="smile" />
+                <img src="Images/smile.png" alt="smile" />
               </div>
               <div>
                 <span>
@@ -57,7 +57,7 @@ function App() {
               </div>
             </div>
             <div className="SquareTwo">
-              <img src="/Images/wifi.png" alt="wifi" />
+              <img src="Images/wifi.png" alt="wifi" />
             </div>
           </div>
         </div>
@@ -76,11 +76,11 @@ function App() {
               </div>
             </div>
             <div className="Rectangle">
-              <img src="/Images/flight.png" alt="flight" />
+              <img src="Images/flight.png" alt="flight" />
             </div>
           </div>
           <div className="Circle">
-            <img src="/Images/clock.png" alt="clock" />
+            <img src="Images/clock.png" alt="clock" />
           </div>
         </div>
         <div className="ContainerThirdLevel">
@@ -124,10 +124,10 @@ function App() {
         </div>
         <div className="Footer">
           <div className="CallIcon">
-            <img src="/Images/phone.png" alt="call" />
+            <img src="Images/phone.png" alt="call" />
           </div>
           <div className="cameraIcon">
-            <img src="/Images/camera.png" alt="camera" />
+            <img src="Images/camera.png" alt="camera" />
           </div>
         </div>
       </div>
